@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Moovin</title>
+    <meta name="description" content="Moovin">
+    <script src="https://kit.fontawesome.com/31dace1577.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+
+    <header class="menu">
+        <div class="flex-container">
+            <div id="contato-cel">
+                <p>(51) 9 9920 0350</p>
+            </div>
+            <div id="contato-wpp">
+                <p>(51) 9 9920 0350</p>
+            </div>
+            <ul>
+                <a href="#"></a>
+                <li><a href="#">Lista de Desejos</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Trocas e Devoluções</a></li>
+            </ul>
+    </header>
+
+    <div class="container">
+        <div class="logotipo">
+            <img id="logotipo" src="img/logo.png" alt="Moovin logo">
+        </div>
+
+        <div class="input-group">
+            <input type="search" placeholder="    O que você esta procurando?" id="input-search">
+            <button type="button"></button>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" type="button"><i
+                    class="fas fa-chevron-down">Entrar</i></button>
+
+
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home"> Minha Conta</a>
+                <a href="#about"> Meus Pedidos</a>
+                <a href="#contact"> Lista de Desejos</a>
+            </div>
+        </div>
+        <div class="carrinho">
+            <img src="img/Path 1.png" alt="">
+            <p>+50</p>
+        </div>
+
+
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
